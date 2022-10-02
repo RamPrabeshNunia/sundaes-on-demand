@@ -47,7 +47,7 @@ describe("testing ", () => {
 
         // popover diappears when we mouse out
         userEvent.unhover(termsAndConditions);
-        waitForElementToBeRemoved(() => screen.queryByText(/no ice cream will actually be delivered/i));
+        await waitForElementToBeRemoved(() => screen.queryByText(/no ice cream will actually be delivered/i));
         // expect(nullPopoverAgain).not.toBeInTheDocument();
     });
 });
